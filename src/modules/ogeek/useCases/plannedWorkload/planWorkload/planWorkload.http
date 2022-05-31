@@ -1,0 +1,24 @@
+@baseUrl=http://localhost:3000/api
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE2NTAwMDMyMjEsImV4cCI6MTY1MjU5NTIyMX0.eirhwOMVuL8bZAfL5B607vsadqlDtc73vh6m0I8e_do
+@productionToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksImlhdCI6MTY0ODE0MDc5OSwiZXhwIjoxNjUwNzMyNzk5fQ.cS3yD6WjYzjjlPx8C2yORRqC1z-RYmGbP-9nt_VIAZ0
+@devToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJpYXQiOjE2NDgzOTU3MDAsImV4cCI6MTY1MDk4NzcwMH0.PeyCmrQtcnyEWlB6QirUrADZ_TUUgvRMxZtMStDHv3w
+###
+POST {{baseUrl}}/planned-workload
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "startDate": "2022-04-01 00:00:00",
+    "reason": "Early Bird",
+    "plannedWorkloads": [
+        {
+	        "workload": 20,
+            "committedWorkloadId": 1
+        },
+        {
+	        "workload": 21,
+            "committedWorkloadId": 2
+        }
+    ]
+}
+

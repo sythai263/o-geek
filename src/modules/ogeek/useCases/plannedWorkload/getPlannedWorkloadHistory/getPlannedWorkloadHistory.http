@@ -1,0 +1,10 @@
+@baseUrl=http://localhost:3000/api
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxMiIsInJvbGUiOiJQRU9QTEVfT1BTIiwiaWF0IjoxNjQ5OTQzOTIzLCJleHAiOjE2NTI1MzU5MjN9.JJW23YguO4XQ8si22uux9T0uNH7FPerMmUfrkD2WWYU
+@productionToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksImlhdCI6MTY0ODE0MDc5OSwiZXhwIjoxNjUwNzMyNzk5fQ.cS3yD6WjYzjjlPx8C2yORRqC1z-RYmGbP-9nt_VIAZ0
+@devToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJpYXQiOjE2NDgzOTU3MDAsImV4cCI6MTY1MDk4NzcwMH0.PeyCmrQtcnyEWlB6QirUrADZ_TUUgvRMxZtMStDHv3w
+###
+GET {{baseUrl}}/planned-workload/history?week=17&year=2022
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+
